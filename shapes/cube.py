@@ -4,6 +4,7 @@ from math import pi
 
 class Cube(Shape3d):
     name = "Cube"
+
     def __init__(self, edge):
         self.edge = edge
 

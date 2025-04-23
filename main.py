@@ -1,13 +1,13 @@
-from sphere import Sphere
-from cylinder import Cylinder
-from cube import Cube
+from shapes.sphere import Sphere
+from shapes.cylinder import Cylinder
+from shapes.cube import Cube
 import random
 
 
 def create_random_shape():
     shape_type = random.choice(['Sphere', 'Cylinder', 'Cube'])
 
-    if type == 'Sphere':
+    if shape_type == 'Sphere':
         radius = random.uniform(1, 10)
         return Sphere(radius)
     elif shape_type == 'Cylinder':
